@@ -1,0 +1,127 @@
+{% block header %} {% include './partials/header.njk' %} {% endblock %}
+
+<!-- Bootstrap -->
+<!-- <link href="/css/bootstrap.min.css" rel="stylesheet" /> -->
+<!-- Custom -->
+<link href="/css/styles.css" rel="stylesheet" />
+
+{% block ie8supporthtml %} {% include './partials/ie8-support-html.njk' %} {%
+endblock %}
+
+<div class="container">
+  <div class="menu">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Features</a>
+    <a href="">Add to Slack</a>
+  </div>
+  <section class="header">
+    <div class="top">
+      <h1 class="text-center"><span class="text-bold">Ticky</span>Bot</h1>
+      <p class="sub-title text-center">
+        Let your team manage their support tickets 100% inside Slack
+      </p>
+      <button class="button primary-btn">
+        <img src="/images/slack.svg" alt="" />
+        Add to <span class="text-bold">Slack</span>
+      </button>
+    </div>
+    <div class="TickyBot__image">
+      <img src="/images/tickybot.svg" alt="some image" class="img-responsive" />
+    </div>
+  </section>
+  <section class="what-is-tickybot">
+    <h2>What Is <span class="text-bold">Ticky</span>Bot</h2>
+    <p>
+      <span class="text-bold">Ticky</span>Bot is a Slack Bot 🤖 that lets you
+      use support tickets on Slack. This way, you don't need to leave your
+      beloved channel to assist your users, if you don't feel like it.
+    </p>
+
+    <p>
+      With <span class="text-bold">Ticky</span>Bot you can easily check if
+      you've received new tickets, change their status, or write a reply, and
+      the ticket will instantly update itself on our site.
+    </p>
+
+    <p>
+      Support requests shouldn't be handled through Slack's direct messages.<br />
+
+      <em>
+        Image about someone asking silly questions and the workplace admin
+        asking him/her to open a support ticket so other admins could look into
+        the issue.</em
+      >
+    </p>
+  </section>
+  <section class="how-it-works">
+    <h2>How it Works</h2>
+    <div class="my-card-wrap">
+      <div class="my-card">
+        <div class="my-card-image">
+          <img src="/images/workplace.svg" alt="" />
+        </div>
+        <p>
+          You can add TickyBot to your Slack workplace by scrolling down or
+          <a href="">clicking here</a>
+        </p>
+      </div>
+      <div class="my-card">
+        <div class="my-card-image">
+          <img src="/images/bubble.svg" alt="" />
+        </div>
+        <p>
+          Your users can open a ticket by typing /ticket and their message into
+          the chat field
+        </p>
+      </div>
+      <div class="my-card">
+        <div class="my-card-image">
+          <img src="/images/tasks.svg" alt="" />
+        </div>
+        <p>
+          Once you or another admin solved their problems you can type /ticket
+          close #id to close the ticket
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="start-using-tickybot">
+    <h2>Start Using <span class="text-bold">Ticky</span>Bot Today</h2>
+    <p class="text-center">
+      <span class="text-bold">Ticky</span>Bot allows Slack teams to manage their
+      support tickets 100% inside Slack, without having to switch between
+      different apps.
+    </p>
+    <button class="button secondary-btn">
+      <img src="/images/slack.svg" alt="" />
+      Add to <span class="text-bold">Slack</span>
+    </button>
+    <p class="text-center">
+      ... so you don't need to go back and forth with another app.
+    </p>
+  </section>
+  <footer>
+    <p>Made with ❤️ by the Chingu Bears 19 team</p>
+
+    <p>Source code is available on our GitHub page</p>
+
+    <p>
+      The app is not created by, affiliated with, or supported by Slack
+      Technologies, Inc.
+    </p>
+  </footer>
+</div>
+<button
+  id="js-back-to-top-btn"
+  class="back-to-top-btn"
+  style="display: inline-block;"
+>
+  <img class="back-to-top-btn__img" src="/images/top.svg" />
+</button>
+{% block corejavascript %} 
+{% include './partials/core-javascript.njk' %} 
+{% endblock %} 
+{% block footer %}
+{% include './partials/footer.njk' %} 
+{% endblock %}

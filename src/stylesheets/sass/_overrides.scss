@@ -1,0 +1,209 @@
+/**
+  * @desc override existing selectors, though try and generalise so as to extract 
+  *       the specific override and add it to either components or objects or somewhere,
+  *       includes quick fixes, hot fixes
+  * @author Neil Symester neil.symester@towergate.co.uk
+  */
+
+.container {
+  width: 100%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+.sub-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #40596b;
+  padding: 1rem;
+
+  a {
+    color: #ffd05a;
+    text-decoration: none;
+    padding: 0 0.5rem;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.header {
+  background-color: #55c0ec;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.how-it-works {
+  background-color: #90ddaa;
+}
+
+.what-is-tickybot {
+  background-color: #fafafa;
+
+  p {
+    padding: 0 30px;
+  }
+}
+
+.my-card-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.my-card {
+  background-color: #40596b;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 60px 30px;
+  border-radius: 5px;
+  flex-basis: 400px;
+  min-width: 300px;
+
+  img {
+    width: 224px;
+    margin: 40px auto;
+    display: block;
+    /* padding: 60px 30px 30px; */
+    padding-top: 25px;
+  }
+
+  p {
+    background-color: #fafafa;
+    padding: 15px 25px 30px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  background-color: #40596b;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.825rem;
+  text-align: center;
+  padding: 10px 10px;
+  p {
+    line-height: 10px;
+    font-weight: 100;
+  }
+}
+
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1.7rem;
+  margin: 40px auto 30px;
+  transition-duration: 0.4s;
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  // background-color: white;
+  color: rgba(0, 0, 0, 0.75);
+  position: relative;
+  padding: 20px 70px 20px 100px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+  img {
+    width: 13%;
+    position: absolute;
+    top: 15px;
+    left: 45px;
+  }
+}
+
+.primary-btn:hover {
+  background-color: #e7e7e7;
+}
+
+.secondary-btn {
+  background-color: #40596b;
+  color: white;
+  position: relative;
+  padding: 20px 70px 20px 100px;
+  margin: 60px auto;
+
+  img {
+    width: 13%;
+    position: absolute;
+    top: 15px;
+    left: 45px;
+  }
+}
+
+.secondary-btn:hover {
+  background-color: #e7e7e7;
+}
+
+.TickyBot__image {
+}
+
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+}
+
+section {
+  padding: 10px 20px 35px;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -2px;
+    margin: 15px 10px 40px;
+  }
+
+  p {
+    padding: 20px 40px;
+  }
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.back-to-top-btn {
+  background-color: #ffd05a;
+  border: 1px solid #ffd05a;
+  border-radius: 5px;
+  position: fixed;
+  right: 10px;
+  bottom: 15px;
+  outline: none;
+  z-index: 10;
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+  width: 45px;
+}
